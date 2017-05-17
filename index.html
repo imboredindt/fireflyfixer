@@ -4,11 +4,12 @@
     <title>Firefly 6.5</title>
     <script type="text/javascript">
       $( window ).resize(function() {
-        $( window ).append( "<div>Handler for .resize() called.</div>" );
+        $('.iframe').css('height', $(window).height()+'px');
+        $('.iframe').css('width', $(window).width()+'px');
        });
   </script>
   </head>
   <body>
-    <iframe src="https://www.kow.fireflycloud.net" seamless="seamless" />
+    <iframe src="http://www.kow.fireflycloud.net" frameborder="0" allowtransparency="true" class="iframe"/>
   </body>
 </html>
